@@ -309,3 +309,42 @@ iframe {
     -ms-transform: rotate(1020deg);
     -o-transform: rotate(1020deg);
 }
+
+.container {
+    animation: showSlow 6s;
+    -moz-animation: showSlow 6s; /* Firefox */
+    -webkit-animation: showSlow 6s; /* Safari and Chrome */
+    -o-animation: showSlow 6s; /* Opera */
+}
+@keyframes showSlow {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes showSlow { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes showSlow { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes showSlow { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
